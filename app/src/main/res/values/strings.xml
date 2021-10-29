@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">lab2</string>
     <string name="article_title">7 Skills All C.E.Os should Master</string>
-    <string name="article_subtitle"><u>Here are some skills all C.E.O must master</u></string>
+    <string name="article_subtitle"><i>Here are some skills all C.E.O must master</i></string>
     <string name="article_text">Everyone wants the corner office with the great view, but not everyone has the same skills to get there. Becoming CEO is more than just “what you know,” and “who you know,” The qualities that make a great CEO are actually a compilation of a lot of things top-level executives master on their own.
     \nFor more information see the article at https://www.alux.com/skills-ceos/
     \n\n

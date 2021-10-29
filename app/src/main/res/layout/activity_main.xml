@@ -5,23 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
-
 
 
     <TextView
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
+        android:background="@color/backcolor"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/teal_700"
         android:textAlignment="center"
-        android:background="@color/backcolor"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,15 +47,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/article_subheading">
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingExtra="5sp"
-            android:padding="@dimen/padding_regular"
-            android:text="@string/article_text"
-            android:autoLink="web"
-            android:background="@color/newcolor"
-            app:layout_constraintTop_toBottomOf="@id/article_subheading" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/biz"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5sp"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_text"
+                android:textColor="@color/anothercolor"
+                android:autoLink="web"
+                android:background="@color/newcolor"
+                app:layout_constraintTop_toBottomOf="@id/imageview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
